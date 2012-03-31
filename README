@@ -1,0 +1,12 @@
+Elias, Sven, Michael, Fabian
+
+Goal:
+Make it possible to tweet about a shop and get a discount for it
+
+
+Actual way to go:
+1) We have a Widget with a Twitter-Application
+2) User clicks on the Widget, authorizes our application and WE make a tweet for him
+3) We write into the session which salesrule the user tweeted for
+    (more than one button with more than one rule possible)
+4) The user get a salesrule to his quote and has a discount with the checkout
