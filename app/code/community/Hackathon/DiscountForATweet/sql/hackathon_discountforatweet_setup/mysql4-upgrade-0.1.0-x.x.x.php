@@ -24,7 +24,7 @@
  * @copyright  Copyright (c) 2012 Magento Hackathon
  * @license	   http://www.gnu.org/licenses/gpl.html GPL, version 3
  * @version    0.1.0
- * @link       http://magento-hackathon.mixxt.com
+ * @link       http://magento-hackathon.de
  * @since      File available since Release 0.1.0
  * @author     Hackathon Core Team <core@hackathon>
  */
