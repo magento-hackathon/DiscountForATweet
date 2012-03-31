@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<widgets>
+    <Hackathon_TweetWidget type="hackathon_discountforatweet/tweetWidget" translate="name description" module="hackathon_discountforatweet">
+        <name>Tweet Button</name>
+        <description type="desc">Shows a button to tweet for a certain salesrule</description>
+        <parameters>
+            <salesRule translate="label">
+                <label>SalesRule</label>
+                <required>1</required>
+                <visible>1</visible>
+                <type>label</type>
+                <sort_order>10</sort_order>
+                <helper_block>
+                    <type>adminhtml/promo_widget_chooser</type>
+                    <data>
+                        <button translate="open">
+                            <open>Choose SalesRule...</open>
+                        </button>
+                    </data>
+                </helper_block>
+            </salesRule>
+            <templatefield translate="label">
+                <label>Template</label>
+                <required>1</required>
+                <visible>1</visible>
+                <sort_order>20</sort_order>
+                <type>text</type>
+                <value>hackathon/discountforatweet/tweet_widget.phtml</value>
+            </templatefield>
+        </parameters>
+    </Hackathon_TweetWidget>
+</widgets>

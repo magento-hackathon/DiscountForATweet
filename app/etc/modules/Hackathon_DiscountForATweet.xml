@@ -48,12 +48,16 @@
  * @since      Class available since Release 0.1.0
  * @author     Hackathon Core Team <core@hackathon>
  */
- --> 
+ -->
 <config>
     <modules>
         <Hackathon_DiscountForATweet>
             <active>true</active>
             <codePool>community</codePool>
+            <depends>
+                <Mage_SalesRule/>
+            </depends>
+
         </Hackathon_DiscountForATweet>
     </modules>
-</config> 
+</config>

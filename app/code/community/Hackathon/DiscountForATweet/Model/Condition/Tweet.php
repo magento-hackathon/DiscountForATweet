@@ -11,6 +11,10 @@
  * @link			 http://magento-hackathon.de
  * @since			File available since Release 0.1.0
  * @author		 Hackathon Core Team <core@hackathon>
+ *
+ * @method setAttributeOption
+ * @method setShowAsText
+ * @method getAttribute
  * */
 class Hackathon_DiscountForATweet_Model_Condition_Tweet extends Mage_Rule_Model_Condition_Abstract {
 
@@ -70,19 +74,9 @@ class Hackathon_DiscountForATweet_Model_Condition_Tweet extends Mage_Rule_Model_
 	 * @return bool
 	 */
 	public function validate(Varien_Object $object) {
-		$address = $object;
-		if (!$address instanceof Mage_Sales_Model_Quote_Address) {
-			if ($object->getQuote()->isVirtual()) {
-				$address = $object->getQuote()->getBillingAddress();
-			} else {
-				$address = $object->getQuote()->getShippingAddress();
-			}
-		}
 
-		if ('payment_method' == $this->getAttribute() && !$address->hasPaymentMethod()) {
-			$address->setPaymentMethod($object->getQuote()->getPayment()->getMethod());
-		}
 
-		return parent::validate($address);
+
+		return parent::validate($object);
 	}
 }

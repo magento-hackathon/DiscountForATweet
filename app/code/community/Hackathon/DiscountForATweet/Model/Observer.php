@@ -44,9 +44,13 @@
 
 class Hackathon_DiscountForATweet_Model_Observer
 {
+
 	/**
 	 * Event: salesrule_rule_condition_combine
-	 * 
+	 *
+	 * @param $observer
+	 *
+	 * @return
 	 */
 	function addConditionToSalesRule($observer)
 	{

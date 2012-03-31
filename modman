@@ -6,6 +6,8 @@ app/code/community/Hackathon/DiscountForATweet  app/code/community/Hackathon/Dis
 app/design/adminhtml/default/default/layout/hackathon_discountforatweet.xml app/design/adminhtml/default/default/layout/hackathon_discountforatweet.xml
 # Frontend-Layout-XML
 app/design/frontend/default/default/layout/hackathon_discountforatweet.xml app/design/frontend/default/default/layout/hackathon_discountforatweet.xml
+# Frontend Templates
+app/design/frontend/default/default/template/hackathon/discountforatweet/ app/design/frontend/default/default/template/hackathon/discountforatweet/
 # Locale
 app/locale/de_DE/Hackathon_DiscountForATweet.csv app/locale/de_DE/Hackathon_DiscountForATweet.csv
 app/locale/en_US/Hackathon_DiscountForATweet.csv app/locale/en_US/Hackathon_DiscountForATweet.csv
