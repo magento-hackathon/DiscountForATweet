@@ -1,0 +1,11 @@
+# Config-File
+app/etc/modules/Hackathon_DiscountForATweet.xml app/etc/modules/Hackathon_DiscountForATweet.xml
+# App Files
+app/code/community/Hackathon/DiscountForATweet  app/code/community/Hackathon/DiscountForATweet
+# Adminhtml-Layout-XML
+app/design/adminhtml/default/default/layout/hackathon_discountforatweet.xml app/design/adminhtml/default/default/layout/hackathon_discountforatweet.xml
+# Frontend-Layout-XML
+app/design/frontend/default/default/layout/hackathon_discountforatweet.xml app/design/frontend/default/default/layout/hackathon_discountforatweet.xml
+# Locale
+app/locale/de_DE/Hackathon_DiscountForATweet.csv app/locale/de_DE/Hackathon_DiscountForATweet.csv
+app/locale/en_US/Hackathon_DiscountForATweet.csv app/locale/en_US/Hackathon_DiscountForATweet.csv
