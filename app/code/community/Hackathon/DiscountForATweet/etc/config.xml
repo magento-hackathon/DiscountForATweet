@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * License: GNU General Public License
+ *
+ * Copyright (c) 2012 Magento Hackathon. All rights reserved.
+ * Note: Original work copyright to respective authors
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ *
+ * @category   Hackathon
+ * @package    Hackathon_DiscountForATweet
+ * @subpackage Config
+ * @copyright  Copyright (c) 2012 Magento Hackathon
+ * @license    http://www.gnu.org/licenses/gpl.html GPL, version 3
+ * @version    0.1.0
+ * @link       http://magento-hackathon.mixxt.com
+ * @since      File available since Release 0.1.0
+ * @author     Hackathon Core Team <core@hackathon>
+ */
+
+/**
+ * Modules configuration file. 
+ *
+ * @category   Hackathon
+ * @package    Hackathon_DiscountForATweet
+ * @subpackage Config
+ * @copyright  Copyright (c) 2012 Magento Hackathon
+ * @license    http://www.gnu.org/licenses/gpl.html GPL, version 3
+ * @version    Release: 0.1.0
+ * @since      Class available since Release 0.1.0
+ * @author     Hackathon Core Team <core@hackathon>
+ */
+ -->
+<config>
+    <modules>
+        <Hackathon_DiscountForATweet>
+            <version>0.1.0</version>
+        </Hackathon_DiscountForATweet>
+    </modules>
+    <frontend>
+        <translate>
+            <modules>
+                <hackathon_discountforatweet>
+                    <files>
+                        <default>Hackathon_DiscountForATweet.csv</default>
+                    </files>
+                </hackathon_discountforatweet>
+            </modules>
+        </translate>
+        <routers>
+            <hackathon_discountforatweet>
+                <use>standard</use>
+                <args>
+                    <module>Hackathon_DiscountForATweet</module>
+                    <frontName>hackathon_discountforatweet</frontName>
+                </args>
+            </hackathon_discountforatweet>
+        </routers>
+        <layout>
+            <updates>
+                <hackathon_discountforatweet>
+                    <file>hackathon_discountforatweet.xml</file>
+                </hackathon_discountforatweet>
+            </updates>
+        </layout>
+    </frontend>
+    <admin>
+        <routers>
+			<hackathon_discountforatweet>
+				<use>admin</use>
+				<args>
+					<module>Hackathon_DiscountForATweet</module>
+					<frontName>admin_hackathon_discountforatweet</frontName>
+				</args>
+			</hackathon_discountforatweet>
+        </routers>
+    </admin>
+    <adminhtml>
+        <translate>
+            <modules>
+                <hackathon_discountforatweet>
+                    <files>
+                        <default>Hackathon_DiscountForATweet.csv</default>
+                    </files>
+                </hackathon_discountforatweet>
+            </modules>
+        </translate>
+		<acl>
+			<resources>
+				<admin>
+					<children>
+						<system>
+							<children>
+								<config>
+									<children>
+										<hackathon_discountforatweet translate="title" module="hackathon_discountforatweet">
+											<title>DiscountForATweet</title>
+											<sort_order>50</sort_order>
+										</hackathon_discountforatweet>
+									</children>
+								</config>
+							</children>
+						</system>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+		<layout>
+			<updates>
+				<hackathon_discountforatweet>
+					<file>hackathon_discountforatweet.xml</file>
+				</hackathon_discountforatweet>
+			</updates>
+		</layout>
+    </adminhtml>   
+    <global>
+        <models>
+            <hackathon_discountforatweet>
+                <class>Hackathon_DiscountForATweet_Model</class>
+                <resourceModel>hackathon_discountforatweet_resource</resourceModel>
+            </hackathon_discountforatweet>
+            <hackathon_discountforatweet_resource>
+                <class>Hackathon_DiscountForATweet_Model_Resource</class>
+                <entities/>
+            </hackathon_discountforatweet_resource>
+        </models>
+        <resources>
+            <hackathon_discountforatweet_setup>
+                <setup>
+                    <module>Hackathon_DiscountForATweet</module>
+                    <class>Hackathon_DiscountForATweet_Model_Resource_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </hackathon_discountforatweet_setup>
+            <hackathon_discountforatweet_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </hackathon_discountforatweet_write>
+            <hackathon_discountforatweet_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </hackathon_discountforatweet_read>
+        </resources>
+        <blocks>
+            <hackathon_discountforatweet>
+                <class>Hackathon_DiscountForATweet_Block</class>
+            </hackathon_discountforatweet>
+        </blocks>
+        <helpers>
+            <hackathon_discountforatweet>
+                <class>Hackathon_DiscountForATweet_Helper</class>
+            </hackathon_discountforatweet>
+        </helpers>
+    </global>
+</config>
