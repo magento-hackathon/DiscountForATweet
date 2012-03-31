@@ -167,5 +167,15 @@
                 <class>Hackathon_DiscountForATweet_Helper</class>
             </hackathon_discountforatweet>
         </helpers>
+        <events>
+        	<salesrule_rule_condition_combine>
+        		<observers>
+                    <add_condition_to_sales_rule>
+                        <class>hackathon_discountforatweet/observer</class>
+                        <method>addConditionToSalesRule</method>
+                    </add_condition_to_sales_rule>
+                </observers>
+        	</salesrule_rule_condition_combine>
+        </events>
     </global>
 </config>
