@@ -49,15 +49,15 @@ class Hackathon_DiscountForATweet_Helper_Config
 
 	/**
 	 * Holds the xml path to the config value
-	 * hackathon/discountforatweet/general/enable
+	 * discountforatweet/general/enable
 	 *
 	 * @var string
 	 */
-	const XML_PATH_GENERAL_ENABLE = 'hackathon/discountforatweet/general/enable';
+	const XML_PATH_GENERAL_ENABLE = 'discountforatweet/general/enable';
 	
 	/**
 	 * Returns the configured value for the config value
-	 * hackathon/discountforatweet/general/enable
+	 * discountforatweet/general/enable
 	 *
 	 * @param void
 	 * @return mixed

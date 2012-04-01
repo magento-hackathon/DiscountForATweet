@@ -54,18 +54,21 @@ class Hackathon_DiscountForATweet_Model_Observer
 	 * @return
 	 */
 	public function addConditionToSalesRule($observer) {
-		if ($this->getConfig()->getGeneralEnable()) {
-			//get additional conditions and add >Tweeted about< condition
-			$additional = $observer->getAdditional();
-			$conditions = (array) $additional->getConditions();
-			
-			$conditions = array_merge_recursive($conditions, array(
-				array('label'=>Mage::helper('discountforatweet')->__('Tweeted about'), 'value'=>'discountforatweet/condition_tweet'),
-			));
-			
-			$additional->setConditions($conditions);
-			$observer->setAdditional($additional);
-		}
+		Mage::log($this->getConfig()->getGeneralEnable());
+		if (!$this->getConfig()->getGeneralEnable())
+			return false;
+		
+		//get additional conditions and add >Tweeted about< condition
+		$additional = $observer->getAdditional();
+		$conditions = (array) $additional->getConditions();
+		
+		$conditions = array_merge_recursive($conditions, array(
+			array('label'=>Mage::helper('discountforatweet')->__('Tweeted about'), 'value'=>'discountforatweet/condition_tweet'),
+		));
+		
+		$additional->setConditions($conditions);
+		$observer->setAdditional($additional);
+		
 		return $observer;
 	}
 }

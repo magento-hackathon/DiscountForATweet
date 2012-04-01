@@ -118,12 +118,7 @@
         <models>
             <discountforatweet>
                 <class>Hackathon_DiscountForATweet_Model</class>
-                <resourceModel>discountforatweet_resource</resourceModel>
             </discountforatweet>
-            <discountforatweet_resource>
-                <class>Hackathon_DiscountForATweet_Model_Resource</class>
-                <entities/>
-            </discountforatweet_resource>
         </models>
         <blocks>
             <discountforatweet>
@@ -148,9 +143,11 @@
     </global>
     <default>
     	<hackathon>
-    		<general>
-    			<enable>1</enable>
-    		</general>
+    		<discountforatweet>
+	    		<general>
+	    			<enable>1</enable>
+	    		</general>
+    		</discountforatweet>
    		</hackathon>
    	</default>
 </config>
