@@ -45,5 +45,26 @@
 abstract class Hackathon_DiscountForATweet_Block_Abstract
 	extends Mage_Core_Block_Template
 {
-
+	/**
+	 * Holds the xml path to the config value
+	 * hackathon/discountforatweet/general/enable
+	 *
+	 * @var string
+	 */
+	const XML_PATH_GENERAL_ENABLE = 'hackathon/discountforatweet/general/enable';
+	
+	/**
+	 * Returns the configured value for the config value
+	 * hackathon/discountforatweet/general/enable
+	 *
+	 * @param void
+	 * @return mixed
+	 */
+	public function getGeneralEnable($storeId = null) {
+		$config = Mage::getStoreConfig(
+				self::XML_PATH_GENERAL_ENABLE, $storeId
+		);
+	
+		return $config;
+	}
 }

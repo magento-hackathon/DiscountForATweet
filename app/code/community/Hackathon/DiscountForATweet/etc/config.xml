@@ -76,17 +76,6 @@
             </updates>
         </layout>
     </frontend>
-    <admin>
-        <routers>
-			<discountforatweet>
-				<use>admin</use>
-				<args>
-					<module>Hackathon_DiscountForATweet</module>
-					<frontName>admin_discountforatweet</frontName>
-				</args>
-			</discountforatweet>
-        </routers>
-    </admin>
     <adminhtml>
         <translate>
             <modules>
@@ -136,27 +125,6 @@
                 <entities/>
             </discountforatweet_resource>
         </models>
-        <resources>
-            <discountforatweet_setup>
-                <setup>
-                    <module>Hackathon_DiscountForATweet</module>
-                    <class>Hackathon_DiscountForATweet_Model_Resource_Setup</class>
-                </setup>
-                <connection>
-                    <use>core_setup</use>
-                </connection>
-            </discountforatweet_setup>
-            <discountforatweet_write>
-                <connection>
-                    <use>core_write</use>
-                </connection>
-            </discountforatweet_write>
-            <discountforatweet_read>
-                <connection>
-                    <use>core_read</use>
-                </connection>
-            </discountforatweet_read>
-        </resources>
         <blocks>
             <discountforatweet>
                 <class>Hackathon_DiscountForATweet_Block</class>
@@ -178,4 +146,11 @@
         	</salesrule_rule_condition_combine>
         </events>
     </global>
+    <default>
+    	<hackathon>
+    		<general>
+    			<enable>1</enable>
+    		</general>
+   		</hackathon>
+   	</default>
 </config>

@@ -3,7 +3,8 @@
 
 
 
-class Hackathon_DiscountForATweet_Block_Tweetapp extends Hackathon_DiscountForATweet_Block_Abstract
+class Hackathon_DiscountForATweet_Block_Tweetapp
+	extends Hackathon_DiscountForATweet_Block_Abstract
 {
 	protected $twitterObj;
 	

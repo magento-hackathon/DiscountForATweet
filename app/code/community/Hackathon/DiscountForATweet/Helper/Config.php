@@ -44,7 +44,29 @@
  */
 
 class Hackathon_DiscountForATweet_Helper_Config
-	extends Hackathon_DiscountForATweet_Helper_Config_Abstract
+	extends Mage_Core_Helper_Abstract
 {
 
+	/**
+	 * Holds the xml path to the config value
+	 * hackathon/discountforatweet/general/enable
+	 *
+	 * @var string
+	 */
+	const XML_PATH_GENERAL_ENABLE = 'hackathon/discountforatweet/general/enable';
+	
+	/**
+	 * Returns the configured value for the config value
+	 * hackathon/discountforatweet/general/enable
+	 *
+	 * @param void
+	 * @return mixed
+	 */
+	public function getGeneralEnable($storeId = null) {
+		$config = Mage::getStoreConfig(
+			self::XML_PATH_GENERAL_ENABLE, $storeId
+		);
+		
+		return $config;
+	}
 }

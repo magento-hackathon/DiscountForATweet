@@ -45,5 +45,26 @@
 abstract class Hackathon_DiscountForATweet_Model_Abstract
 	extends Mage_Core_Model_Abstract
 {
-
+	/**
+	 * Holds an instance of the module's
+	 * global config helper
+	 *
+	 * @var Hackathon_DiscountForATweet_Helper_Config
+	 */
+	protected $_config;
+	
+	/**
+	 * Creates and returns an instance of the module's
+	 * global config helper
+	 *
+	 * @param void
+	 * @return Hackathon_DiscountForATweet_Helper_Config
+	 */
+	public function getConfig() {
+		if(!$this->_config) {
+			$this->_config = Mage::helper('discountforatweet/config');
+		}
+	
+		return $this->_config;
+	}
 }

@@ -5,8 +5,10 @@
  * @method getTemplatefield - Templatefile (magic)
  * @method setSalesRule - setSalesrule (magic)
  */
-class Hackathon_DiscountForATweet_Block_TweetWidget extends Mage_Core_Block_Template
-	implements Mage_Widget_Block_Interface {
+class Hackathon_DiscountForATweet_Block_TweetWidget 
+	extends Hackathon_DiscountForATweet_Block_Abstract
+	implements Mage_Widget_Block_Interface
+{
 
 	/**
 	 * set the Templatefile

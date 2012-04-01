@@ -42,7 +42,8 @@
  * @author     Hackathon Core Team <core@hackathon>
  */
 
-class Hackathon_DiscountForATweet_Block_Tweetbutton extends Hackathon_DiscountForATweet_Block_Abstract
+class Hackathon_DiscountForATweet_Block_Tweetbutton
+	extends Hackathon_DiscountForATweet_Block_Abstract
 {
 	
     /**
