@@ -1,0 +1,32 @@
+
+<?php echo $link; ?>
+
+<div>
+	<?php echo $status; ?>
+</div>
+
+<div>
+	userrname: <?php echo $username; ?>
+</div>
+
+
+<?php if($this->isAuthenticated()) : ?>
+
+<form action="<?php echo $this->getFormActionUrl(); ?>" id="contactForm" method="post">
+    <div class="fieldset">
+
+        <ul class="form-list">
+            <li class="wide">
+                <label for="comment" class="required"><em>*</em>comment</label>
+                <div class="input-box">
+                    <textarea name="comment" id="comment" class="required-entry input-text" cols="5" rows="3"></textarea>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="buttons-set">
+        <button type="submit" title="submit" class="button"><span><span>submit</span></span></button>
+    </div>
+</form>
+
+<?php endif; ?>
