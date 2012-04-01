@@ -74,9 +74,15 @@ class Hackathon_DiscountForATweet_Model_Condition_Tweet extends Mage_Rule_Model_
 	 * @return bool
 	 */
 	public function validate(Varien_Object $object) {
-
-
-
-		return parent::validate($object);
+		$session = Mage::getSingleton('customer/session');
+		$messages = $session->getTwitterMessages();
+		if (is_array($messages)) {
+			foreach ($messages as $m) {
+				if ($this->validateAttribute($m)) {
+					return true;
+				}
+			}
+		}
+		return false;
 	}
 }

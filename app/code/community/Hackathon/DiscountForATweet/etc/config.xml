@@ -31,7 +31,7 @@
  */
 
 /**
- * Modules configuration file. 
+ * Modules configuration file.
  *
  * @category   Hackathon
  * @package    Hackathon_DiscountForATweet
@@ -113,7 +113,7 @@
 				</discountforatweet>
 			</updates>
 		</layout>
-    </adminhtml>   
+    </adminhtml>
     <global>
         <models>
             <discountforatweet>

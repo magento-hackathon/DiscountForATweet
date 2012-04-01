@@ -1,5 +1,4 @@
 <?php
-session_start();
 class EpiOAuth
 {
   public $version = '1.0';
@@ -20,7 +19,7 @@ class EpiOAuth
   }
 
   public function getAuthorizationUrl()
-  {  
+  {
     $retval = "{$this->authorizeUrl}?";
     $token = $this->getRequestToken();
     return $this->authorizeUrl . '?oauth_token=' . $token->oauth_token;
@@ -56,7 +55,7 @@ class EpiOAuth
     $params = func_get_args();
     $this->token = $token;
     $this->tokenSecret = $secret;
-  } 
+  }
 
   public function encode($string)
   {
@@ -73,8 +72,8 @@ class EpiOAuth
       $oauth .= "{$name}=\"{$value}\",";
     }
     $_h[] = substr($oauth, 0, -1);
-  
-    curl_setopt($ch, CURLOPT_HTTPHEADER, $_h); 
+
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $_h);
   }
 
   protected function generateNonce()
