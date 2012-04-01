@@ -57,7 +57,7 @@ class Hackathon_DiscountForATweet_Model_Observer
 		$additional = $observer->getAdditional();
 		$conditions = (array) $additional->getConditions();
 		$conditions = array_merge_recursive($conditions, array(
-			array('label'=>Mage::helper('hackathon_discountforatweet')->__('Tweeted about'), 'value'=>'hackathon_discountforatweet/condition_tweet'),
+			array('label'=>Mage::helper('discountforatweet')->__('Tweeted about'), 'value'=>'discountforatweet/condition_tweet'),
 		));
 		$additional->setConditions($conditions);
 		$observer->setAdditional($additional);

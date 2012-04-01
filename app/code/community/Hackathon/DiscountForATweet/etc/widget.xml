@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <widgets>
-    <Hackathon_TweetWidget type="hackathon_discountforatweet/tweetWidget" translate="name description" module="hackathon_discountforatweet">
+    <Hackathon_TweetWidget type="discountforatweet/tweetWidget" translate="name description" module="discountforatweet">
         <name>Tweet Button</name>
         <description type="desc">Shows a button to tweet for a certain salesrule</description>
         <parameters>

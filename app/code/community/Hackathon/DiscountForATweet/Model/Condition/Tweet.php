@@ -25,7 +25,7 @@ class Hackathon_DiscountForATweet_Model_Condition_Tweet extends Mage_Rule_Model_
 	 */
 	public function loadAttributeOptions() {
 		$attributes = array(
-			'tweetContent' => Mage::helper('hackathon_discountforatweet')->__('Tweet content')
+			'tweetContent' => Mage::helper('discountforatweet')->__('Tweet content')
 		);
 
 		$this->setAttributeOption($attributes);

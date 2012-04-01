@@ -52,49 +52,49 @@
     <frontend>
         <translate>
             <modules>
-                <hackathon_discountforatweet>
+                <discountforatweet>
                     <files>
-                        <default>Hackathon_DiscountForATweet.csv</default>
+                        <default>DiscountForATweet.csv</default>
                     </files>
-                </hackathon_discountforatweet>
+                </discountforatweet>
             </modules>
         </translate>
         <routers>
-            <hackathon_discountforatweet>
+            <discountforatweet>
                 <use>standard</use>
                 <args>
                     <module>Hackathon_DiscountForATweet</module>
-                    <frontName>hackathon_discountforatweet</frontName>
+                    <frontName>discountforatweet</frontName>
                 </args>
-            </hackathon_discountforatweet>
+            </discountforatweet>
         </routers>
         <layout>
             <updates>
-                <hackathon_discountforatweet>
-                    <file>hackathon_discountforatweet.xml</file>
-                </hackathon_discountforatweet>
+                <discountforatweet>
+                    <file>discountforatweet.xml</file>
+                </discountforatweet>
             </updates>
         </layout>
     </frontend>
     <admin>
         <routers>
-			<hackathon_discountforatweet>
+			<discountforatweet>
 				<use>admin</use>
 				<args>
 					<module>Hackathon_DiscountForATweet</module>
-					<frontName>admin_hackathon_discountforatweet</frontName>
+					<frontName>admin_discountforatweet</frontName>
 				</args>
-			</hackathon_discountforatweet>
+			</discountforatweet>
         </routers>
     </admin>
     <adminhtml>
         <translate>
             <modules>
-                <hackathon_discountforatweet>
+                <discountforatweet>
                     <files>
-                        <default>Hackathon_DiscountForATweet.csv</default>
+                        <default>DiscountForATweet.csv</default>
                     </files>
-                </hackathon_discountforatweet>
+                </discountforatweet>
             </modules>
         </translate>
 		<acl>
@@ -105,10 +105,10 @@
 							<children>
 								<config>
 									<children>
-										<hackathon_discountforatweet translate="title" module="hackathon_discountforatweet">
+										<discountforatweet translate="title" module="discountforatweet">
 											<title>DiscountForATweet</title>
 											<sort_order>50</sort_order>
-										</hackathon_discountforatweet>
+										</discountforatweet>
 									</children>
 								</config>
 							</children>
@@ -119,25 +119,25 @@
 		</acl>
 		<layout>
 			<updates>
-				<hackathon_discountforatweet>
-					<file>hackathon_discountforatweet.xml</file>
-				</hackathon_discountforatweet>
+				<discountforatweet>
+					<file>discountforatweet.xml</file>
+				</discountforatweet>
 			</updates>
 		</layout>
     </adminhtml>   
     <global>
         <models>
-            <hackathon_discountforatweet>
+            <discountforatweet>
                 <class>Hackathon_DiscountForATweet_Model</class>
-                <resourceModel>hackathon_discountforatweet_resource</resourceModel>
-            </hackathon_discountforatweet>
-            <hackathon_discountforatweet_resource>
+                <resourceModel>discountforatweet_resource</resourceModel>
+            </discountforatweet>
+            <discountforatweet_resource>
                 <class>Hackathon_DiscountForATweet_Model_Resource</class>
                 <entities/>
-            </hackathon_discountforatweet_resource>
+            </discountforatweet_resource>
         </models>
         <resources>
-            <hackathon_discountforatweet_setup>
+            <discountforatweet_setup>
                 <setup>
                     <module>Hackathon_DiscountForATweet</module>
                     <class>Hackathon_DiscountForATweet_Model_Resource_Setup</class>
@@ -145,33 +145,33 @@
                 <connection>
                     <use>core_setup</use>
                 </connection>
-            </hackathon_discountforatweet_setup>
-            <hackathon_discountforatweet_write>
+            </discountforatweet_setup>
+            <discountforatweet_write>
                 <connection>
                     <use>core_write</use>
                 </connection>
-            </hackathon_discountforatweet_write>
-            <hackathon_discountforatweet_read>
+            </discountforatweet_write>
+            <discountforatweet_read>
                 <connection>
                     <use>core_read</use>
                 </connection>
-            </hackathon_discountforatweet_read>
+            </discountforatweet_read>
         </resources>
         <blocks>
-            <hackathon_discountforatweet>
+            <discountforatweet>
                 <class>Hackathon_DiscountForATweet_Block</class>
-            </hackathon_discountforatweet>
+            </discountforatweet>
         </blocks>
         <helpers>
-            <hackathon_discountforatweet>
+            <discountforatweet>
                 <class>Hackathon_DiscountForATweet_Helper</class>
-            </hackathon_discountforatweet>
+            </discountforatweet>
         </helpers>
         <events>
         	<salesrule_rule_condition_combine>
         		<observers>
                     <add_condition_to_sales_rule>
-                        <class>hackathon_discountforatweet/observer</class>
+                        <class>discountforatweet/observer</class>
                         <method>addConditionToSalesRule</method>
                     </add_condition_to_sales_rule>
                 </observers>

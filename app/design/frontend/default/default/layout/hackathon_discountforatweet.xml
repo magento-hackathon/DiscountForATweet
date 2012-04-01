@@ -1,8 +1,0 @@
-<?xml version="1.0"?>
-<layout version="0.1.0">
-	<hackathon_discountforatweet_index_index>
-		<reference name="content">
-			<block type="hackathon_discountforatweet/tweetapp" name="tweetapp" template="hackathon/discountforatweet/tweetapp.phtml" />
-		</reference>
-	</hackathon_discountforatweet_index_index>
-</layout>
