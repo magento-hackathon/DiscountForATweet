@@ -1,21 +1,5 @@
 <?php
-/**
- * Condition-Class for Tweeting
- *
- * @category	 Hackathon
- * @package		Hackathon_DiscountForATweet
- * @subpackage Setup
- * @copyright	Copyright (c) 2012 Magento Hackathon
- * @license		 http://www.gnu.org/licenses/gpl.html GPL, version 3
- * @version		0.1.0
- * @link			 http://magento-hackathon.de
- * @since			File available since Release 0.1.0
- * @author		 Hackathon Core Team <core@hackathon>
- *
- * @method setAttributeOption
- * @method setShowAsText
- * @method getAttribute
- * */
+
 class Hackathon_DiscountForATweet_Model_Condition_Tweet extends Mage_Rule_Model_Condition_Abstract {
 
 	/**
