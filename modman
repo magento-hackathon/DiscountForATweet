@@ -1,5 +1,5 @@
 # Config-File
-app/etc/modules/DiscountForATweet.xml app/etc/modules/DiscountForATweet.xml
+app/etc/modules/Hackathon_DiscountForATweet.xml app/etc/modules/Hackathon_DiscountForATweet.xml
 # App Files
 app/code/community/Hackathon/DiscountForATweet  app/code/community/Hackathon/DiscountForATweet
 # Adminhtml-Layout-XML
